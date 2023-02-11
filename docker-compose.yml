@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  nova_soft_client:
+    container_name: nova_soft_landingpage
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 80:3000
+    restart: unless-stopped
