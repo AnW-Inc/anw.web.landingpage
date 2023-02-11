@@ -31,7 +31,7 @@ const LastedPortfolio: React.FunctionComponent<ILastedPortfolioProps> = (props) 
       setCurrentSlideIndex(next)
     },
   }
-  if(!data?.data?.length){
+  if (!data?.data?.length) {
     return null
   }
   return (
@@ -55,7 +55,8 @@ const LastedPortfolio: React.FunctionComponent<ILastedPortfolioProps> = (props) 
       <Flex
         border={'1px solid rgba(37, 37, 37, .5)'}
         px={{ base: '24px', md: '40px' }}
-        bg={'rgba(0, 0, 0, 0.4)'}
+        bg={'theme.color-5'}
+        color={'white'}
         py={'32px'}
         gap={{ base: '12px', md: '24px' }}
         justifyContent={'space-between'}
@@ -77,7 +78,9 @@ const LastedPortfolio: React.FunctionComponent<ILastedPortfolioProps> = (props) 
             </Text>
           </CustomNavLink>
           <Divider my={'8px'} borderColor={'rgba(255, 255, 255, 0.5)'} />
-          <Text textTransform={'capitalize'}>{data?.data?.[currentSlideIndex]?.attributes?.category?.data?.attributes?.name}</Text>
+          <Text textTransform={'capitalize'}>
+            {data?.data?.[currentSlideIndex]?.attributes?.category?.data?.attributes?.name}
+          </Text>
         </Box>
         <HStack justifyContent={{ base: 'end' }} spacing={{ base: '12px', md: '30px' }}>
           <Flex

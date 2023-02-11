@@ -6,7 +6,7 @@ export const OUR_STORY = [
     coverImage: AboutStory1Img.src,
     title: 'Founded',
     description:
-      '9385 Studio started operation in October 2021, we are a software, game, online game, NFT game, hyper casual game, and other Technology project development studio.',
+      'A&W started operation in October 2021, we are a software, game, online game, NFT game, hyper casual game, and other Technology project development studio.',
   },
   {
     year: 2022,

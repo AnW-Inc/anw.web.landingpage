@@ -34,7 +34,7 @@ const OurMission: React.FunctionComponent<IOurMissionProps> = (props) => {
             <CustomNavLink to="/portfolio">
               <HStack fontSize={'18px'} lineHeight={'24px'} spacing={'8px'} my={'29px'}>
                 <Text
-                  color={'#272727'}
+                  color={'theme.color-5'}
                   fontWeight={'600'}
                   fontSize={'20px'}
                   lineHeight={'22px'}
@@ -43,7 +43,7 @@ const OurMission: React.FunctionComponent<IOurMissionProps> = (props) => {
                 >
                   See Our Portfolio
                 </Text>
-                <AiOutlineArrowRight color="#272727" fontWeight={'bold'} size={24} />
+                <AiOutlineArrowRight color={'theme.color-5'} fontWeight={'bold'} size={24} />
               </HStack>
             </CustomNavLink>
           </Box>
@@ -56,10 +56,10 @@ const OurMission: React.FunctionComponent<IOurMissionProps> = (props) => {
             Our Mission
           </Text>
         </HStack>
-        <Heading variant={'primary'} size={'h2'} maxW={'593px'}>
+        <Heading color={'theme.color-5'} variant={'primary'} size={'h2'} maxW={'593px'}>
           Bringing Joy to the World Through Our Passion for Gaming
         </Heading>
-        <Text mt={'16px'} color={'theme.color-5'} maxW={'562px'} fontSize={'18px'} lineHeight={'24px'}>
+        <Text mt={'16px'} color={'theme.color-6'} maxW={'562px'} fontSize={'18px'} lineHeight={'24px'}>
           In order for everyone to experience a little moment of joy, it is our goal to astound the global community. We
           put our hearts and souls into making games, and the result is multiplatform experiences that set the bar for
           the industry and are downloaded by millions of gamers every day.

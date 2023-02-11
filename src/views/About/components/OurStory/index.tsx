@@ -1,5 +1,5 @@
 import { Box, Flex, Grid, GridItem, Heading, HStack, Text } from '@chakra-ui/react'
-import { AboutBg1Img } from 'constants/images'
+import { AboutBg1Img, AboutBg2Img } from 'constants/images'
 import Image from 'next/image'
 import * as React from 'react'
 import { OUR_STORY } from './utils'
@@ -10,7 +10,7 @@ const OurStory: React.FunctionComponent<IOurStoryProps> = (props) => {
   return (
     <Box
       py={{ base: '48px', md: '104px' }}
-      bgImage={AboutBg1Img.src}
+      bgImage={AboutBg2Img.src}
       bgSize={'cover'}
       bgRepeat={'no-repeat'}
       bgPos={'center'}
@@ -29,16 +29,16 @@ const OurStory: React.FunctionComponent<IOurStoryProps> = (props) => {
         <Box>
           <HStack>
             <Box width={'36px'} h={'2px'} bg={'theme.color-5'} />
-            <Text mb={'8px'} fontWeight={'600'} color={'theme.color-5'} fontSize={'16px'} lineHeight={'24px'}>
+            <Text mb={'8px'} fontWeight={'600'} color={'white'} fontSize={'16px'} lineHeight={'24px'}>
               Our Story
             </Text>
           </HStack>
           <Heading variant={'primary'} size={'h2'} maxW={'680px'}>
-            The story behind our 9385 Studio
+            The story behind our A&W
           </Heading>
         </Box>
-        <Text maxW={'440px'} color={'theme.color-5'} fontSize={'18px'} lineHeight={'24px'}>
-          Exploring the Origins and Journey of 9385 Studio
+        <Text maxW={'440px'} color={'white'} fontSize={'18px'} lineHeight={'24px'}>
+          Exploring the Origins and Journey of A&W
         </Text>
       </Flex>
       <Box maxW={'1248px'} px={'24px'} mx={'auto'}>

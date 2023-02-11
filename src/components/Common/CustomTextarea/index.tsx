@@ -66,7 +66,7 @@ const CustomTextarea: React.FunctionComponent<ICustomTextareaProps & FormControl
           disabled={disabled}
           borderRadius={'none'}
           border={'1px solid #8C8C8C !important'}
-          // color="white"
+          color="white"
           _focus={{
             borderColor: 'var(--chakra-colors-primary) !important',
           }}

@@ -39,6 +39,7 @@ const FeaturedGame: React.FunctionComponent<IFeaturedGameProps> = (props) => {
           rounded={'full'}
           w={{ base: '32px', md: '56px' }}
           h={{ base: '32px', md: '56px' }}
+          transition={'all 0.3s'}
           bg={activeStep === 1 ? 'primary' : '#272727'}
           onClick={() => setActiveStep(1)}
         >
@@ -63,6 +64,7 @@ const FeaturedGame: React.FunctionComponent<IFeaturedGameProps> = (props) => {
           rounded={'full'}
           w={{ base: '32px', md: '56px' }}
           h={{ base: '32px', md: '56px' }}
+          transition={'all 0.3s'}
           bg={activeStep === 2 ? 'primary' : '#272727'}
           onClick={() => setActiveStep(2)}
         >
@@ -87,6 +89,7 @@ const FeaturedGame: React.FunctionComponent<IFeaturedGameProps> = (props) => {
           rounded={'full'}
           w={{ base: '32px', md: '56px' }}
           h={{ base: '32px', md: '56px' }}
+          transition={'all 0.3s'}
           bg={activeStep === 3 ? 'primary' : '#272727'}
           onClick={() => setActiveStep(3)}
         >
@@ -105,7 +108,7 @@ const FeaturedGame: React.FunctionComponent<IFeaturedGameProps> = (props) => {
         </Text>
         <Box position={'relative'} mt={{ base: '24px', md: '40px' }}>
           <Box left={'12px'} top={'12px'} pos={'absolute'} w={'full'} h={'full'} border={'3px solid #272727'} />
-          <Image width={797} height={406} alt={'featured img'} src={HomeFeaturedImg.src} />
+          <Image width={797} height={600} alt={'featured img'} src={HomeFeaturedImg.src} />
         </Box>
       </Box>
     </Box>

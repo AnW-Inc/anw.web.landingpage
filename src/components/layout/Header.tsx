@@ -2,6 +2,7 @@ import { ChevronDownIcon, CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
 import {
   Box,
   Button,
+  Center,
   Collapse,
   Flex,
   Icon,
@@ -48,16 +49,16 @@ export default function WithSubNavigation() {
       flexDir={'column'}
       justify={'center'}
       align={{ base: 'start', md: 'center' }}
-      position={{ base: 'sticky', md: 'fixed' }}
+      // position={{ base: 'sticky', md: 'fixed' }}
       zIndex={9}
       top={0}
       w={'full'}
-      {...(isScrolled
-        ? {
-            bg: 'primary',
-          }
-        : {})}
-      // bg={{ base: 'black', md: 'linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);' }}
+      // {...(isScrolled
+      //   ? {
+      //       bg: 'primary',
+      //     }
+      //   : {})}
+      // bg={{ base: 'black', md: 'linear-gradient(180deg, #ff7e40 0%, rgba(0, 0, 0, 0) 100%);' }}
     >
       <Flex px={'24px'} w={'100%'} maxW={'1248px'} color={'white'} minH={'78px'} py={{ base: 2 }} align={'center'}>
         <Flex flex={{ base: 1, md: 'auto' }} display={{ base: 'flex', md: 'none' }}>
@@ -89,14 +90,17 @@ export default function WithSubNavigation() {
                 Studio
               </Text>
             </HStack> */}
-            <Image src="/logo.png" height={'50px'} alt={'logo'} />
+            <Center p={2} bg={'theme.color-1'} w={'150px'}>
+              <Image src="/logo.png" height={'50px'} alt={'logo'} />
+            </Center>
           </CustomNavLink>
           <Box display={{ base: 'none', md: 'block' }}>
             <DesktopNav />
           </Box>
           <ScrollLink to={'#contact'} spy={true} smooth={true} duration={500}>
             <Button
-              bg={'#fff'}
+              bg={'primary'}
+              color={'white'}
               w={'136px'}
               h={'46px'}
               ml={'36px'}
@@ -124,7 +128,7 @@ export default function WithSubNavigation() {
 }
 
 const DesktopNav = () => {
-  const linkColor = useColorModeValue('white', 'gray.200')
+  const linkColor = useColorModeValue('theme.color-6', 'gray.200')
   const linkHoverColor = useColorModeValue('theme.color-5', 'white')
   const popoverContentBgColor = useColorModeValue('rgb(31,36,41)', 'red.400')
   const router = useRouter()

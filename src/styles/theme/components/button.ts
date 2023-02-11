@@ -7,11 +7,11 @@ export const Button: ComponentStyleConfig = {
     primary: {
       fontFamily: fonts.default,
       fontWeight: '500',
-      color: '#000000',
+      color: 'white',
       rounded: 'none',
-      minH: '46px',
+      minH: '40px',
       padding: '11px 32px',
-      bg: 'white',
+      bg: 'primary',
       fontSize: '16px',
       lineHeight: '24px',
       _hover: {

@@ -127,8 +127,8 @@ const OurTeam: React.FunctionComponent<IOurTeamProps> = (props) => {
   }
   return (
     <Box py={{ base: '40px', md: '80px' }} mx={'auto'} px={'24px'} maxW={'1248px'} w={'full'} as={'section'}>
-      <Heading textAlign={'center'} mx={'auto'} variant={'primary'} size={'h2'} maxW={'578px'}>
-        The amazing team behind 9385 Studio
+      <Heading color={'theme.color-5'} textAlign={'center'} mx={'auto'} variant={'primary'} size={'h2'} maxW={'578px'}>
+        The amazing team behind A&W
       </Heading>
 
       <Box mt={{ base: '32px', md: '64px' }}>

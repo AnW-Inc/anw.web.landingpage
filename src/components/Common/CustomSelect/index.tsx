@@ -55,6 +55,7 @@ const CustomSelect: React.FunctionComponent<ICustomSelectProps & FormControlProp
         _invalid={{ borderColor: '#FF4B32 !important' }}
         id={name}
         name={name}
+        color={'theme.color-6'}
         border={'none'}
         borderRadius={'0'}
         borderBottom={'1px solid #8C8C8C !important'}

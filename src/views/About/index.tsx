@@ -17,9 +17,16 @@ const About: React.FunctionComponent<IAboutProps> = (props) => {
             Our Vision
           </Text>
         </HStack>
-        <Heading mt={'32px'} maxW={'1100px'} mx={'auto'} variant={'primary'} textAlign={'center'} size={'h2'}>
-          9385 Studio is dedicated to being a market leader in Vietnam and across Southeast Asia in the video game
-          industry.
+        <Heading
+          color={'theme.color-5'}
+          mt={'32px'}
+          maxW={'1100px'}
+          mx={'auto'}
+          variant={'primary'}
+          textAlign={'center'}
+          size={'h2'}
+        >
+          A&W is dedicated to being a market leader in Vietnam and across Southeast Asia in the video game industry.
         </Heading>
       </Box>
       <OurMission />

@@ -151,7 +151,7 @@ const Testimonials: React.FunctionComponent<ITestimonialsProps> = (props) => {
             </Heading>
           </Box>
           <Text maxW={'440px'} color={'theme.color-6'} fontSize={'18px'} lineHeight={'24px'}>
-            Testimonials from Satisfied Customers of 9385 Studio
+            Testimonials from Satisfied Customers of A&W
           </Text>
         </Flex>
       </Box>{' '}

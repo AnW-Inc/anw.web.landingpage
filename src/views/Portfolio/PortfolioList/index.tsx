@@ -55,9 +55,10 @@ const PortfolioList: React.FunctionComponent<IPortfolioListProps> = (props) => {
             }}
             cursor={'pointer'}
             p={'8px 24px'}
-            _hover={{ bg: 'primary' }}
+            _hover={{ bg: 'primary', color: 'white' }}
             bg={query?.category === 'all' || !query?.category ? 'primary' : '#5A5A5A'}
-            color={query?.category === 'all' ? '#272727' : '#000000'}
+            // color={query?.category === 'all' ? '#272727' : '#000000'}
+            color={'white'}
             textAlign={'center'}
             textTransform={'uppercase'}
           >
@@ -66,11 +67,12 @@ const PortfolioList: React.FunctionComponent<IPortfolioListProps> = (props) => {
           {categoryListData?.map((ctg: any) => (
             <Box
               key={ctg.id}
-              _hover={{ bg: 'primary' }}
+              _hover={{ bg: 'primary', color: 'white' }}
               cursor={'pointer'}
               p={'8px 24px'}
-              bg={query?.category === ctg.attributes.slug ? 'primary' : '#5A5A5A'}
-              color={query?.category === ctg.attributes.slug ? '#272727' : '#000000'}
+              bg={query?.category === ctg.attributes.slug ? 'primary' : 'transparent'}
+              color={query?.category === ctg.attributes.slug ? 'white' : 'primary'}
+              border={'1px solid orange'}
               onClick={() => {
                 router.push(`/portfolio?category=${ctg.attributes.slug}`)
               }}

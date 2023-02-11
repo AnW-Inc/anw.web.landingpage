@@ -5,6 +5,7 @@ import PortfolioDetailBgImg from 'assets/images/portfolio/detail-bg.png'
 import ServiceBgImg from 'assets/images/service/bg.png'
 
 import HomeBannerImg from 'assets/images/home/banner.png'
+import HomeBanner2Img from 'assets/images/home/banner2.svg'
 import HomeBg1Img from 'assets/images/home/bg-1.png'
 import HomeBg2Img from 'assets/images/home/bg-2.png'
 import HomeBg3Img from 'assets/images/home/bg-3.png'
@@ -28,6 +29,7 @@ export {
   PortfolioBgImg,
   PortfolioDetailBgImg,
   HomeBannerImg,
+  HomeBanner2Img,
   HomeBg1Img,
   HomeBg2Img,
   HomeBg3Img,

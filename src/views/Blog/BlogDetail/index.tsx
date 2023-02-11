@@ -45,7 +45,12 @@ const BlogDetail: React.FunctionComponent<IBlogDetailProps> = (props) => {
     <>
       <NextSeo title={`${capitalize(title)} - News`} />
       <CustomSeo seo={seo} />
-      <Box bgPos={'center'} bgRepeat={'no-repeat'} bgSize={'cover'} bgImage={PortfolioDetailBgImg.src}>
+      <Box
+        bgPos={'center'}
+        bgRepeat={'no-repeat'}
+        bgSize={'cover'}
+        //  bgImage={PortfolioDetailBgImg.src}
+      >
         <Box
           pt={{ base: '48px', md: '104px' }}
           pb={{ base: '24px', md: '80px' }}
@@ -122,13 +127,13 @@ const BlogDetail: React.FunctionComponent<IBlogDetailProps> = (props) => {
                       <Text
                         textTransform={'capitalize'}
                         fontWeight={'700'}
-                        color={'white'}
+                        color={'theme.color-5'}
                         _hover={{ color: 'primary' }}
                       >
                         {blog.attributes.title}
                       </Text>
                     </CustomNavLink>
-                    <HStack color={'theme.color-5'} fontSize={'0.9rem'}>
+                    <HStack color={'theme.color-6'} fontSize={'0.9rem'}>
                       <Text>{dayjs(blog.attributes.publishedAt).format('MMM DD, YYYY')}</Text>
                       <Text>-</Text>
                       <Text>{blog.attributes.readingTime}</Text>

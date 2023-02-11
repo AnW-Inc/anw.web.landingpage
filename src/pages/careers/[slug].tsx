@@ -158,12 +158,12 @@ export default function CareerDetailPage({ career, relatedCareers }: Props) {
                 {type}
               </Text>
             </HStack>
-            <HStack color={'theme.color-5'} fontSize={'0.8em'}>
+            <HStack color={'theme.color-6'} fontSize={'0.8em'}>
               <Text>{location}</Text> <Text>-</Text> <Text>{salary}</Text>
             </HStack>
             <Text mt={'12px'}>
               Contact via{' '}
-              <Link href={'mailto:careers@9385.games'} passHref>
+              <Link href={'mailto:careers@a&w.games'} passHref>
                 <Text
                   transition={'all 0.2s'}
                   _hover={{ textDecoration: 'underline', transform: 'scale(1.02)' }}
@@ -174,31 +174,22 @@ export default function CareerDetailPage({ career, relatedCareers }: Props) {
                   display={'inline-block'}
                 >
                   {' '}
-                  careers@9385.games
+                  careers@a&w.games
                 </Text>
               </Link>
             </Text>
           </Box>
           <ScrollLink to={'#apply-now'} spy={true} smooth={true} duration={500}>
-            <Button
-              _hover={{
-                bg: 'primary',
-                color: 'white',
-              }}
-              mt={{ base: '12px', md: 0 }}
-              bg={'white'}
-              color={'black'}
-              borderRadius={'none'}
-            >
+            <Button variant={'primary'} mt={{ base: '12px', md: 0 }} borderRadius={'none'}>
               Apply now
             </Button>
           </ScrollLink>
         </Flex>
         <Divider />
         <Flex color={'#EAEAEA'} flexDir={{ base: 'column', md: 'row' }} pb={'42px'} gap={'24px'}>
-          <MarkdownWrapper dangerouslySetInnerHTML={{ __html: `${content}` }} />
+          <MarkdownWrapper color={'theme.color-5'} dangerouslySetInnerHTML={{ __html: `${content}` }} />
           <Box>
-            <Text mt={'1em'} fontWeight={'700'}>
+            <Text color={'theme.color-5'} mt={'1em'} fontWeight={'700'}>
               MOST POPULAR
             </Text>
             <VStack mt={'12px'} spacing={'24px'} alignItems={'flex-start'}>
@@ -208,7 +199,7 @@ export default function CareerDetailPage({ career, relatedCareers }: Props) {
                     gap={'12px'}
                     w={{ base: 'full', md: '370px' }}
                     p={'12px 16px'}
-                    color={'#272727'}
+                    color={'white'}
                     fontFamily={'default'}
                     _hover={{
                       transform: 'scale(1.02)',
@@ -217,7 +208,7 @@ export default function CareerDetailPage({ career, relatedCareers }: Props) {
                     transition={'all 0.2s'}
                     boxShadow={'1px 1px 5px 1px rgba(0,0,0,0.4)'}
                     cursor={'pointer'}
-                    bg={'#F3F5F8'}
+                    bg={'theme.color-5'}
                     alignItems={'center'}
                     fontSize={'16px'}
                   >
@@ -255,24 +246,24 @@ export default function CareerDetailPage({ career, relatedCareers }: Props) {
       <Box
         py={'90px'}
         px={'24px'}
-        _before={{
-          bg: '##101010',
-          bgImage: CareerBannerImg.src,
-          bgSize: 'cover',
-          bgPos: 'center',
-          textAlign: 'center',
-          content: "''",
-          position: 'absolute',
-          width: '100%',
-          height: '75%',
-          left: '0',
-          zIndex: '-1',
-          transform: 'translateY(200px)',
-        }}
+        // _before={{
+        //   bg: '##101010',
+        //   bgImage: CareerBannerImg.src,
+        //   bgSize: 'cover',
+        //   bgPos: 'center',
+        //   textAlign: 'center',
+        //   content: "''",
+        //   position: 'absolute',
+        //   width: '100%',
+        //   height: '75%',
+        //   left: '0',
+        //   zIndex: '-1',
+        //   transform: 'translateY(200px)',
+        // }}
         position={'relative'}
       >
         <Box
-          bg={'#101010'}
+          bg={'theme.color-5'}
           p={{ base: '16px', md: '48px' }}
           // border={'1px solid #ccc'}
           boxShadow={'0 6px 100px 0 #0000001a'}

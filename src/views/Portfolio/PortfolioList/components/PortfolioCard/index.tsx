@@ -12,14 +12,7 @@ interface IPortfolioCardProps {
 const PortfolioCard: React.FunctionComponent<IPortfolioCardProps> = (props) => {
   const { data } = props
   const {
-    attributes: {
-      title,
-      slug,
-      content,
-      readingTime,
-      publishedAt,
-      category,
-    },
+    attributes: { title, slug, content, readingTime, publishedAt, category },
   } = data
   const coverImage = data?.attributes?.coverImage?.data?.attributes?.url
 
@@ -33,10 +26,22 @@ const PortfolioCard: React.FunctionComponent<IPortfolioCardProps> = (props) => {
     <Box>
       <Box>
         <Center mb={'8px'}>
-          <Image objectFit='cover' width={576} height={316} alt={`${title} img cover`} src={getCMSImageUrl(coverImage)} />
+          <Image
+            objectFit="cover"
+            width={576}
+            height={316}
+            alt={`${title} img cover`}
+            src={getCMSImageUrl(coverImage)}
+          />
         </Center>
 
-        <Text textTransform={'capitalize'} color={'#D4D4D4'} fontWeight={600} fontSize={'16px'} lineHeight={'24px'}>
+        <Text
+          textTransform={'capitalize'}
+          color={'theme.color-6'}
+          fontWeight={600}
+          fontSize={'16px'}
+          lineHeight={'24px'}
+        >
           {category?.data?.attributes?.name}
         </Text>
         <CustomNavLink to={`/portfolio/${slug}`}>
@@ -46,7 +51,7 @@ const PortfolioCard: React.FunctionComponent<IPortfolioCardProps> = (props) => {
             fontFamily={'primary'}
             fontSize={{ base: '22px', md: '32px' }}
             lineHeight={{ base: '26px', md: '34px' }}
-            color={'#fff'}
+            color={'theme.color-5'}
             textTransform={'capitalize'}
           >
             {title}

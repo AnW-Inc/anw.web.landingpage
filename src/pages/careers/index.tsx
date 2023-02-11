@@ -37,11 +37,11 @@ const Careers: React.FunctionComponent<ICareersProps> = (props) => {
         textAlign={'center'}
         px={'24px'}
       >
-        <Text fontFamily={'primary'} fontWeight={'600'} lineHeight={'60px'} fontSize={'60px'}>
+        <Text color={'white'} fontFamily={'primary'} fontWeight={'600'} lineHeight={'60px'} fontSize={'60px'}>
           Careers
         </Text>
         <Text fontSize={'20px'} lineHeight={'28px'} color={'theme.color-5'} maxW={'720px'} mt={'16px'} mb={'40px'}>
-          Become a 9385 Studio Member <br /> We have plenty of opportunities available. From game design & production to
+          Become a A&W Member <br /> We have plenty of opportunities available. From game design & production to
           marketing & administration, there’s bound to be a job position for you. <br />
           Your dream job at Game Studio is just a few clicks away!
         </Text>

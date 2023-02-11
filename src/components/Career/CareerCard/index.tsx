@@ -32,6 +32,7 @@ const CareerCard: React.FunctionComponent<ICareerCardProps> = (props) => {
 
   return (
     <Flex
+      color={'white'}
       flexDir={{ base: 'column', md: 'row' }}
       justifyContent={{ base: 'flex-start', md: 'space-between' }}
       w={'full'}
@@ -46,7 +47,7 @@ const CareerCard: React.FunctionComponent<ICareerCardProps> = (props) => {
       boxShadow={'1px 1px 5px 1px rgba(0,0,0,0.4)'}
       cursor={'pointer'}
       p={'28px 32px'}
-      bg={'#F3F5F8'}
+      bg={'theme.color-5'}
       alignItems={{ base: 'flex-start', md: 'center' }}
       gap={'12px'}
     >
@@ -77,11 +78,12 @@ const CareerCard: React.FunctionComponent<ICareerCardProps> = (props) => {
       </Box>
 
       <Button
-        _hover={{
-          bg: 'primary',
-          color: 'white',
-        }}
-        bg={'#272727'}
+        // _hover={{
+        //   bg: 'primary',
+        //   color: 'white',
+        // }}
+        // bg={'#272727'}
+        variant={'primary'}
         color={'white'}
         borderRadius={'none'}
         alignSelf={'flex-end'}

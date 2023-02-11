@@ -35,7 +35,7 @@ const News: React.FunctionComponent<INewsProps> = (props) => {
             </Text>
           </HStack>
           <Heading color={'theme.color-5'} variant={'primary'} size={'h2'} maxW={'647px'}>
-            Check out what’s new at 9385 Studio!
+            Check out what’s new at A&W!
           </Heading>
         </Box>
         <Text maxW={'440px'} color={'theme.color-6'} fontSize={'18px'} lineHeight={'24px'}>

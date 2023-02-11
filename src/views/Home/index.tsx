@@ -5,6 +5,7 @@ import { Link as ScrollLink } from 'react-scroll'
 import OurServices from 'views/Home/components/OurServices'
 import Testimonials from 'views/Home/components/Testimonials'
 import Banner from './components/Banner'
+import Banner2 from './components/Banner2'
 import CaseStudy from './components/CaseStudy'
 import FeaturedGame from './components/FeaturedGame'
 import News from './components/News'
@@ -20,7 +21,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
 
   return (
     <Box mt={{ base: '', md: '-78px' }} display={{ md: 'flex' }} flexDir={'column'} w="full">
-      <Banner />
+      <Banner2 />
       {/* <Box bgSize={'cover'} bgPos={'center'} bgRepeat={'no-repeat'} bgImage={HomeBg1Img.src} as={'section'}>
         <Box pt={'80px'} maxW={'calc(1017px + 48px)'} px={'24px'} textAlign={'center'} mx={'auto'}>
           <Heading size={'h1Big'} variant={'primary'}>
@@ -61,8 +62,8 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
           </Flex>
         </Box>
       </Box> */}
-      <PortfolioSlider />
       <OurServices />
+      <PortfolioSlider />
       <FeaturedGame />
       {/* <CaseStudy /> */}
       <Testimonials />

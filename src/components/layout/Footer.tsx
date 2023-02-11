@@ -1,4 +1,4 @@
-import { Box, Button, Flex, HStack, Image, Input, Text, VStack } from '@chakra-ui/react'
+import { Box, Button, Center, Flex, HStack, Image, Input, Text, VStack } from '@chakra-ui/react'
 import CustomNavLink from 'components/Common/CustomNavLink'
 import { AiFillInstagram, AiFillLinkedin } from 'react-icons/ai'
 import { GrFacebookOption, GrTwitter, GrYoutube } from 'react-icons/gr'
@@ -20,10 +20,12 @@ const Footer = () => {
                 >
                   Studio
                 </Text> */}
-                <Image src="/logo.png" height={'40px'} alt={'logo'} />
+                <Center p={2} bg={'theme.color-1'} w={'150px'}>
+                  <Image src="/logo.png" height={'50px'} alt={'logo'} />
+                </Center>
               </HStack>
             </CustomNavLink>
-            <Text mt={'8px'}>
+            <Text mt={'8px'} color={'theme.color-6'}>
               Since our establishment, we have put our heart and soul into what we enjoy the most, Video Games.
             </Text>
             <HStack mt={'32px'} spacing={'32px'}>
@@ -156,13 +158,13 @@ const Footer = () => {
           justifyContent={'space-between'}
           alignItems={'center'}
         >
-          <Box maxW={'500px'}>
+          <Box maxW={'500px'} color={'theme.color-6'}>
             <Text fontWeight={600} fontSize={'20px'} lineHeight={'26px'}>
-              Keep up with the 9385 Studio realm!
+              Keep up with the A&W realm!
             </Text>
             <Text fontSize={'16px'}>
               Sign up for our newsletter to receive the latest news, special events & other exciting news from us at
-              9385 Studio.
+              A&W.
             </Text>
           </Box>
           <Flex h={'60px'} align={'stretch'}>
@@ -191,7 +193,7 @@ const Footer = () => {
           </Flex>
         </Flex>
         <Box py={'40px'} textAlign={'center'} color={'#8C8C8C'}>
-          ©9385 Studio. All rights reserved.
+          ©A&W. All rights reserved.
         </Box>
       </Box>
     </Box>

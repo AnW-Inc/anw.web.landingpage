@@ -33,7 +33,7 @@ const Service: React.FunctionComponent<IServiceProps> = (props) => {
       bgRepeat={'no-repeat'}
     >
       <Box maxW={'1248px'} pb={'48px'} mx={'auto'} w={'full'} px={'24px'}>
-        <Heading textAlign={'center'} variant={'primary'} size={'h1'}>
+        <Heading color={'theme.color-5'} textAlign={'center'} variant={'primary'} size={'h1'}>
           Delivering entertainment to the globe
         </Heading>
         <Text
@@ -41,7 +41,7 @@ const Service: React.FunctionComponent<IServiceProps> = (props) => {
           maxW={'804px'}
           fontSize={'20px'}
           lineHeight={'26px'}
-          color={'theme.color-5'}
+          color={'theme.color-6'}
           mt={'16px'}
           textAlign={'center'}
         >
@@ -55,7 +55,7 @@ const Service: React.FunctionComponent<IServiceProps> = (props) => {
                 _hover={{ transform: 'scale(1.05)' }}
                 transition={'all 0.2s'}
                 pb={'32px'}
-                bg={'#101010'}
+                bg={'theme.color-5'}
                 key={key}
               >
                 <Image

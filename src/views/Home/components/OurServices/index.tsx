@@ -11,7 +11,7 @@ const OurServices: React.FunctionComponent<IOurServicesProps> = (props) => {
   const router = useRouter()
 
   return (
-    <Flex justifyContent={'flex-end'} as={'section'}>
+    <Flex pt={{ base: '48px', md: '104px' }} justifyContent={'flex-end'} as={'section'}>
       <Flex
         maxW={{ base: '1248px', md: 'calc((100vw - 1248px) /2 + 1248px) ' }}
         pl={'24px'}
@@ -29,7 +29,7 @@ const OurServices: React.FunctionComponent<IOurServicesProps> = (props) => {
             </Text>
           </HStack>
           <Heading variant={'primary'} size={'h2'} color={'theme.color-5'} maxW={'664px'}>
-            We are passionate about everything we do – about our games, our company and our industry.
+            We are passionate about everything we do – about our company and our industry.
           </Heading>
           <Text mt={'16px'} color={'theme.color-6'} maxW={'562px'} fontSize={'18px'} lineHeight={'24px'}>
             At our company, we are deeply committed to everything we do - from the games we create, to the work we do as
