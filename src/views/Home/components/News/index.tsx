@@ -29,18 +29,17 @@ const News: React.FunctionComponent<INewsProps> = (props) => {
       >
         <Box>
           <HStack>
-            <Box width={'36px'} h={'2px'} bg={'#6B6B6B'} />
-            <Text mb={'8px'} fontWeight={'600'} color={'#6B6B6B'} fontSize={'16px'} lineHeight={'24px'}>
+            <Box width={'36px'} h={'2px'} bg={'theme.color-5'} />
+            <Text mb={'8px'} fontWeight={'600'} color={'theme.color-5'} fontSize={'16px'} lineHeight={'24px'}>
               News
             </Text>
           </HStack>
-          <Heading variant={'primary'} size={'h2'} maxW={'647px'}>
-          Check out what’s new at 9385 Studio!
+          <Heading color={'theme.color-5'} variant={'primary'} size={'h2'} maxW={'647px'}>
+            Check out what’s new at 9385 Studio!
           </Heading>
         </Box>
-        <Text maxW={'440px'} color={'#6B6B6B'} fontSize={'18px'} lineHeight={'24px'}>
-        Deep dive into the latest news on your favorite games, as well as stories
-          from 9385 all over the world.
+        <Text maxW={'440px'} color={'theme.color-6'} fontSize={'18px'} lineHeight={'24px'}>
+          Deep dive into the latest news on your favorite games, as well as stories from 9385 all over the world.
         </Text>
       </Flex>
       <Flex justifyContent={'flex-end'} mb={'64px'}>
@@ -108,7 +107,7 @@ const News: React.FunctionComponent<INewsProps> = (props) => {
                   </CustomNavLink>
                   {/* <Box
                     order={3}
-                    color={'#6B6B6B'}
+                    color={'theme.color-5'}
                     fontSize={'16px'}
                     lineHeight={'24px'}
                     mt={'8px'}

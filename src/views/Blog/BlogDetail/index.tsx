@@ -53,7 +53,7 @@ const BlogDetail: React.FunctionComponent<IBlogDetailProps> = (props) => {
           px={'24px'}
           mx={'auto'}
         >
-          <HStack justifyContent={'center'} fontSize={'20px'} lineHeight={'26px'} color={'#6B6B6B'}>
+          <HStack justifyContent={'center'} fontSize={'20px'} lineHeight={'26px'} color={'theme.color-5'}>
             <Text>{dayjs(publishedAt).format('MMM DD, YYYY')}</Text>
             <Text>-</Text>
             <Text>{readingTime}</Text>
@@ -87,8 +87,8 @@ const BlogDetail: React.FunctionComponent<IBlogDetailProps> = (props) => {
           <Box mt={{ base: '32px', md: '100px' }}>
             <Flex gap={'24px'} justifyContent={'space-between'}>
               <HStack>
-                <Box width={'36px'} h={'2px'} bg={'#6B6B6B'} />
-                <Text mb={'8px'} fontWeight={'600'} color={'#6B6B6B'} fontSize={'16px'} lineHeight={'24px'}>
+                <Box width={'36px'} h={'2px'} bg={'theme.color-5'} />
+                <Text mb={'8px'} fontWeight={'600'} color={'theme.color-5'} fontSize={'16px'} lineHeight={'24px'}>
                   Lasted News
                 </Text>
               </HStack>
@@ -128,7 +128,7 @@ const BlogDetail: React.FunctionComponent<IBlogDetailProps> = (props) => {
                         {blog.attributes.title}
                       </Text>
                     </CustomNavLink>
-                    <HStack color={'#6B6B6B'} fontSize={'0.9rem'}>
+                    <HStack color={'theme.color-5'} fontSize={'0.9rem'}>
                       <Text>{dayjs(blog.attributes.publishedAt).format('MMM DD, YYYY')}</Text>
                       <Text>-</Text>
                       <Text>{blog.attributes.readingTime}</Text>

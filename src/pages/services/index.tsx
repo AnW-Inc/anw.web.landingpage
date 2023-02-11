@@ -41,7 +41,7 @@ const Service: React.FunctionComponent<IServiceProps> = (props) => {
           maxW={'804px'}
           fontSize={'20px'}
           lineHeight={'26px'}
-          color={'#6B6B6B'}
+          color={'theme.color-5'}
           mt={'16px'}
           textAlign={'center'}
         >

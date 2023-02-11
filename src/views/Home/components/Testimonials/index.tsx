@@ -75,7 +75,7 @@ const Testimonials: React.FunctionComponent<ITestimonialsProps> = (props) => {
               alignItems={'center'}
               w={'44px'}
               h={'44px'}
-              bg={'#272727'}
+              bg={'theme.color-6'}
               p={'6px'}
               cursor={'pointer'}
               _hover={{
@@ -90,7 +90,7 @@ const Testimonials: React.FunctionComponent<ITestimonialsProps> = (props) => {
               alignItems={'center'}
               w={'44px'}
               h={'44px'}
-              bg={'#272727'}
+              bg={'theme.color-6'}
               p={'6px'}
               cursor={'pointer'}
               _hover={{
@@ -108,7 +108,7 @@ const Testimonials: React.FunctionComponent<ITestimonialsProps> = (props) => {
     },
     customPaging: (index: number) => {
       const activeStyle = {
-        bg: '#F6F9FC',
+        bg: 'theme.color-1',
         w: { base: '15px', md: '45px' },
       }
 
@@ -116,7 +116,7 @@ const Testimonials: React.FunctionComponent<ITestimonialsProps> = (props) => {
         <Box
           w={{ base: '6px', md: '32px' }}
           h={{ base: '3px', md: '8px' }}
-          bg={'#8C8C8C'}
+          bg={'theme.color-6'}
           borderTopLeftRadius={'2px'}
           borderBottomLeftRadius={'4px'}
           borderBottomRightRadius={'2px'}
@@ -141,16 +141,16 @@ const Testimonials: React.FunctionComponent<ITestimonialsProps> = (props) => {
         >
           <Box>
             <HStack>
-              <Box width={'36px'} h={'2px'} bg={'#6B6B6B'} />
-              <Text mb={'8px'} fontWeight={'600'} color={'#6B6B6B'} fontSize={'16px'} lineHeight={'24px'}>
+              <Box width={'36px'} h={'2px'} bg={'theme.color-5'} />
+              <Text mb={'8px'} fontWeight={'600'} color={'theme.color-5'} fontSize={'16px'} lineHeight={'24px'}>
                 Testimonials
               </Text>
             </HStack>
-            <Heading variant={'primary'} size={'h2'} maxW={'647px'}>
+            <Heading color={'theme.color-5'} variant={'primary'} size={'h2'} maxW={'647px'}>
               Hear what our amazing customers say
             </Heading>
           </Box>
-          <Text maxW={'440px'} color={'#6B6B6B'} fontSize={'18px'} lineHeight={'24px'}>
+          <Text maxW={'440px'} color={'theme.color-6'} fontSize={'18px'} lineHeight={'24px'}>
             Testimonials from Satisfied Customers of 9385 Studio
           </Text>
         </Flex>
@@ -186,7 +186,7 @@ const Testimonials: React.FunctionComponent<ITestimonialsProps> = (props) => {
                     <Text fontSize={'16px'} lineHeight={'24px'} color={key % 2 === 0 ? '#272727' : 'white'}>
                       {testimonialData.attributes.name}
                     </Text>
-                    <Text fontSize={'14px'} lineHeight={'22px'} color={key % 2 === 0 ? '#6B6B6B' : '#EAEAEA'}>
+                    <Text fontSize={'14px'} lineHeight={'22px'} color={key % 2 === 0 ? 'theme.color-5' : '#EAEAEA'}>
                       {testimonialData.attributes.title}
                     </Text>
                   </Box>

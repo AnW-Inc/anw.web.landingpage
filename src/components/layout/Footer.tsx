@@ -5,7 +5,7 @@ import { GrFacebookOption, GrTwitter, GrYoutube } from 'react-icons/gr'
 
 const Footer = () => {
   return (
-    <Box pt={{ base: '48px', md: '104px' }} color={'#D4D4D4'} as="footer">
+    <Box pt={{ base: '48px', md: '104px' }} as="footer">
       <Box px={'24px'} maxW={'1248px'} mx={'auto'}>
         <Flex pb={'40px'} gap={'64px'} justifyContent={'space-between'} wrap={'wrap'} alignItems={'flex-start'}>
           <Box w={'full'} maxW={'388px'}>
@@ -90,10 +90,10 @@ const Footer = () => {
             </HStack>
           </Box>
           <Box minW={'184px'}>
-            <Text color="#fff" mb="16px" fontWeight={'600'} fontSize={'20px'} lineHeight={'30px'}>
+            <Text color="theme.color-5" mb="16px" fontWeight={'600'} fontSize={'20px'} lineHeight={'30px'}>
               Page
             </Text>
-            <VStack spacing={'12px'} alignItems={'flex-start'}>
+            <VStack spacing={'12px'} color={'theme.color-6'} alignItems={'flex-start'}>
               <CustomNavLink to="/">
                 <Text as="a">Home</Text>
               </CustomNavLink>
@@ -109,10 +109,10 @@ const Footer = () => {
             </VStack>
           </Box>
           <Box minW={'184px'}>
-            <Text color="#fff" mb="16px" fontWeight={'600'} fontSize={'20px'} lineHeight={'30px'}>
+            <Text color="theme.color-5" mb="16px" fontWeight={'600'} fontSize={'20px'} lineHeight={'30px'}>
               Company
             </Text>
-            <VStack spacing={'12px'} alignItems={'flex-start'}>
+            <VStack spacing={'12px'} color={'theme.color-6'} alignItems={'flex-start'}>
               <CustomNavLink to="/#Terms-Conditions">
                 <Text as="a">Terms Conditions</Text>
               </CustomNavLink>
@@ -128,10 +128,10 @@ const Footer = () => {
             </VStack>
           </Box>
           <Box minW={'184px'}>
-            <Text color="#fff" mb="16px" fontWeight={'600'} fontSize={'20px'} lineHeight={'30px'}>
+            <Text color="theme.color-5" mb="16px" fontWeight={'600'} fontSize={'20px'} lineHeight={'30px'}>
               Community
             </Text>
-            <VStack spacing={'12px'} alignItems={'flex-start'}>
+            <VStack spacing={'12px'} color={'theme.color-6'} alignItems={'flex-start'}>
               <CustomNavLink to="/#Help-Center">
                 <Text as="a">Help Center</Text>
               </CustomNavLink>
@@ -158,9 +158,12 @@ const Footer = () => {
         >
           <Box maxW={'500px'}>
             <Text fontWeight={600} fontSize={'20px'} lineHeight={'26px'}>
-            Keep up with the 9385 Studio realm!
+              Keep up with the 9385 Studio realm!
             </Text>
-            <Text fontSize={'16px'}>Sign up for our newsletter to receive the latest news, special events & other exciting news from us at 9385 Studio.</Text>
+            <Text fontSize={'16px'}>
+              Sign up for our newsletter to receive the latest news, special events & other exciting news from us at
+              9385 Studio.
+            </Text>
           </Box>
           <Flex h={'60px'} align={'stretch'}>
             <Input

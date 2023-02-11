@@ -158,7 +158,7 @@ export default function CareerDetailPage({ career, relatedCareers }: Props) {
                 {type}
               </Text>
             </HStack>
-            <HStack color={'#6B6B6B'} fontSize={'0.8em'}>
+            <HStack color={'theme.color-5'} fontSize={'0.8em'}>
               <Text>{location}</Text> <Text>-</Text> <Text>{salary}</Text>
             </HStack>
             <Text mt={'12px'}>

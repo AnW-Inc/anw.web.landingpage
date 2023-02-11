@@ -28,8 +28,8 @@ const OurStory: React.FunctionComponent<IOurStoryProps> = (props) => {
       >
         <Box>
           <HStack>
-            <Box width={'36px'} h={'2px'} bg={'#6B6B6B'} />
-            <Text mb={'8px'} fontWeight={'600'} color={'#6B6B6B'} fontSize={'16px'} lineHeight={'24px'}>
+            <Box width={'36px'} h={'2px'} bg={'theme.color-5'} />
+            <Text mb={'8px'} fontWeight={'600'} color={'theme.color-5'} fontSize={'16px'} lineHeight={'24px'}>
               Our Story
             </Text>
           </HStack>
@@ -37,7 +37,7 @@ const OurStory: React.FunctionComponent<IOurStoryProps> = (props) => {
             The story behind our 9385 Studio
           </Heading>
         </Box>
-        <Text maxW={'440px'} color={'#6B6B6B'} fontSize={'18px'} lineHeight={'24px'}>
+        <Text maxW={'440px'} color={'theme.color-5'} fontSize={'18px'} lineHeight={'24px'}>
           Exploring the Origins and Journey of 9385 Studio
         </Text>
       </Flex>

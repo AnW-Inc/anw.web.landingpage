@@ -10,16 +10,10 @@ interface IAboutProps {}
 const About: React.FunctionComponent<IAboutProps> = (props) => {
   return (
     <Box pb={{ base: '24px', md: '80px' }} as={'section'}>
-      <Box
-        w={'full'}
-        maxW={'1248px'}
-        mx={'auto'}
-        px={'24px'}
-        pt={{ base: '48px', md: '104px' }}
-      >
+      <Box w={'full'} maxW={'1248px'} mx={'auto'} px={'24px'} pt={{ base: '48px', md: '104px' }}>
         <HStack>
-          <Box width={'36px'} h={'2px'} bg={'#6B6B6B'} />
-          <Text mb={'8px'} fontWeight={'600'} color={'#6B6B6B'} fontSize={'16px'} lineHeight={'24px'}>
+          <Box width={'36px'} h={'2px'} bg={'theme.color-5'} />
+          <Text mb={'8px'} fontWeight={'600'} color={'theme.color-5'} fontSize={'16px'} lineHeight={'24px'}>
             Our Vision
           </Text>
         </HStack>

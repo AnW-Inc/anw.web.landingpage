@@ -3,11 +3,16 @@ import CustomNavLink from 'components/Common/CustomNavLink'
 import { DEFAULT_HOME_PAGE_QUERY, useHomePage } from 'hooks/cms/home-page'
 import Image from 'next/image'
 import React from 'react'
-import { AiOutlineArrowRight } from 'react-icons/ai'
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai'
 import Slider from 'react-slick'
 import { getCMSImageUrl } from 'utils/cms'
 
 interface IBannerProps {}
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props
+  return <div className={className} style={{ ...style, display: 'block', background: 'red' }} onClick={onClick} />
+}
 
 const Banner: React.FunctionComponent<IBannerProps> = (props) => {
   const homePage = useHomePage({
@@ -15,13 +20,17 @@ const Banner: React.FunctionComponent<IBannerProps> = (props) => {
   })
   const { isLoading: isHomePageLoading, data: homePageData } = homePage
 
-  const settings = {
+  const sliderRef = React.useRef<any>(null)
+
+  const settings: any = {
     className: 'home-banner-slider',
     dots: true,
-    arrows: true,
+    arrows: false,
     infinite: true,
-    slidesToShow: homePageData?.data?.attributes?.blocks?.find((item) => item.__component === 'blocks.slider')?.itemPerSlide || 1,
-    slidesToScroll: homePageData?.data?.attributes?.blocks?.find((item) => item.__component === 'blocks.slider')?.itemPerSlide || 1,
+    slidesToShow:
+      homePageData?.data?.attributes?.blocks?.find((item) => item.__component === 'blocks.slider')?.itemPerSlide || 1,
+    slidesToScroll:
+      homePageData?.data?.attributes?.blocks?.find((item) => item.__component === 'blocks.slider')?.itemPerSlide || 1,
     autoplay: true,
     speed: 500,
     autoplaySpeed: 2000,
@@ -31,11 +40,11 @@ const Banner: React.FunctionComponent<IBannerProps> = (props) => {
 
   return (
     <Box as={'section'}>
-      <Slider {...settings}>
+      <Slider ref={sliderRef} {...settings}>
         {homePageData?.data?.attributes?.blocks
           ?.find((item) => item.__component === 'blocks.slider')
           ?.slideItems?.map((slide, key) => (
-            <Box key={key} w={{ base: 'full', md: 'full' }}>
+            <Box cursor={'pointer'} key={key} w={{ base: 'full', md: 'full' }}>
               <Image
                 height={762}
                 width={1440}

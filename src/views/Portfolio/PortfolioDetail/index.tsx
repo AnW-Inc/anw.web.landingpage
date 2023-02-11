@@ -70,7 +70,7 @@ const PortfolioDetail: React.FunctionComponent<IPortfolioDetailProps> = (props) 
 
       </VStack> */}
 
-          <HStack justifyContent={'center'} fontSize={'20px'} lineHeight={'26px'} color={'#6B6B6B'}>
+          <HStack justifyContent={'center'} fontSize={'20px'} lineHeight={'26px'} color={'theme.color-5'}>
             <Text>{dayjs(publishedAt).format('MMM DD, YYYY')}</Text>
             <Text>-</Text>
             <Text textTransform={'capitalize'}>{category?.data?.attributes?.name}</Text>

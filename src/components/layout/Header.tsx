@@ -18,10 +18,29 @@ import {
 } from '@chakra-ui/react'
 import CustomNavLink from 'components/Common/CustomNavLink'
 import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
 import { Link as ScrollLink } from 'react-scroll'
 
-export default function WithSubnavigation() {
+export default function WithSubNavigation() {
   const { isOpen, onToggle } = useDisclosure()
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  const handleScroll = () => {
+    const position = window.pageYOffset
+    if (position !== 0) {
+      setIsScrolled(true)
+    } else {
+      setIsScrolled(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true })
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   return (
     <Flex
@@ -33,7 +52,12 @@ export default function WithSubnavigation() {
       zIndex={9}
       top={0}
       w={'full'}
-      bg={{ base: 'black', md: 'linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);' }}
+      {...(isScrolled
+        ? {
+            bg: 'primary',
+          }
+        : {})}
+      // bg={{ base: 'black', md: 'linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);' }}
     >
       <Flex px={'24px'} w={'100%'} maxW={'1248px'} color={'white'} minH={'78px'} py={{ base: 2 }} align={'center'}>
         <Flex flex={{ base: 1, md: 'auto' }} display={{ base: 'flex', md: 'none' }}>
@@ -101,7 +125,7 @@ export default function WithSubnavigation() {
 
 const DesktopNav = () => {
   const linkColor = useColorModeValue('white', 'gray.200')
-  const linkHoverColor = useColorModeValue('#F09000', 'white')
+  const linkHoverColor = useColorModeValue('theme.color-5', 'white')
   const popoverContentBgColor = useColorModeValue('rgb(31,36,41)', 'red.400')
   const router = useRouter()
 

@@ -158,7 +158,7 @@ const OurTeam: React.FunctionComponent<IOurTeamProps> = (props) => {
                     >
                       {ourTeamData.attributes.name}
                     </Text>
-                    <Text mt={'4px'} color={'#6B6B6B'} fontSize={'16px'} lineHeight={'24px'}>
+                    <Text mt={'4px'} color={'theme.color-5'} fontSize={'16px'} lineHeight={'24px'}>
                       {ourTeamData.attributes.title}
                     </Text>
                   </Box>

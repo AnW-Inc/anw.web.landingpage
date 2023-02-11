@@ -21,17 +21,17 @@ const OurServices: React.FunctionComponent<IOurServicesProps> = (props) => {
         w={'full'}
         flexWrap={'wrap'}
       >
-        <Box>
+        <Box color={'theme.color-5'}>
           <HStack>
-            <Box width={'36px'} h={'2px'} bg={'#6B6B6B'} />
-            <Text mb={'8px'} fontWeight={'600'} color={'#6B6B6B'} fontSize={'16px'} lineHeight={'24px'}>
+            <Box width={'36px'} h={'2px'} bg={'theme.color-5'} />
+            <Text mb={'8px'} fontWeight={'600'} color={'theme.color-5'} fontSize={'16px'} lineHeight={'24px'}>
               Services
             </Text>
           </HStack>
-          <Heading variant={'primary'} size={'h2'} maxW={'664px'}>
+          <Heading variant={'primary'} size={'h2'} color={'theme.color-5'} maxW={'664px'}>
             We are passionate about everything we do – about our games, our company and our industry.
           </Heading>
-          <Text mt={'16px'} color={'#6B6B6B'} maxW={'562px'} fontSize={'18px'} lineHeight={'24px'}>
+          <Text mt={'16px'} color={'theme.color-6'} maxW={'562px'} fontSize={'18px'} lineHeight={'24px'}>
             At our company, we are deeply committed to everything we do - from the games we create, to the work we do as
             a company, and our place in the industry. Our passion drives us to constantly strive for excellence in all
             that we do.

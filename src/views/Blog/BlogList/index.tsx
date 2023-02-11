@@ -28,8 +28,8 @@ const BlogList: React.FunctionComponent<IBlogListProps> = (props) => {
   return (
     <Box pt={'70px'} pb={'150px'} maxW={'1248px'} px={'24px'} mx={'auto'} as="main">
       <HStack>
-        <Box width={'36px'} h={'2px'} bg={'#6B6B6B'} />
-        <Text mb={'8px'} fontWeight={'600'} color={'#6B6B6B'} fontSize={'16px'} lineHeight={'24px'}>
+        <Box width={'36px'} h={'2px'} bg={'theme.color-5'} />
+        <Text mb={'8px'} fontWeight={'600'} color={'theme.color-5'} fontSize={'16px'} lineHeight={'24px'}>
           News
         </Text>
       </HStack>
@@ -105,7 +105,7 @@ const BlogList: React.FunctionComponent<IBlogListProps> = (props) => {
                   </CustomNavLink>
                   {/* <Box
                     order={3}
-                    color={'#6B6B6B'}
+                    color={'theme.color-5'}
                     fontSize={'16px'}
                     lineHeight={'24px'}
                     mt={'8px'}

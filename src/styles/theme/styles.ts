@@ -1,13 +1,14 @@
+import colors from './foundations/colors'
 import { fonts } from './foundations/fonts'
 
 export const globalStyles = {
   styles: {
     global: () => ({
       body: {
-        bg: '#000000;',
+        bg: colors.theme['color-3'],
         // color: 'black',
         fontFamily: fonts.default,
-        color: 'white',
+        color: colors.theme['color-5'],
         fontSize: { base: '17px', md: '18px' },
         lineHeight: '24px',
         fontWeight: 'normal',
@@ -16,7 +17,7 @@ export const globalStyles = {
       },
       html: {
         fontFamily: fonts.default,
-        bg: '#000000;',
+        bg: colors.theme['color-3'],
       },
     }),
   },

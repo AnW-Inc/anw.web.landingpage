@@ -31,22 +31,22 @@ const CompanyValues: React.FunctionComponent<ICompanyValuesProps> = (props) => {
           </Text>{' '}
           values cultures
         </Heading>
-        <Text mt={'16px'} maxW={'550px'} color={'#6B6B6B'} fontSize={'16px'} lineHeight={'24px'}>
+        <Text mt={'16px'} maxW={'550px'} color={'theme.color-5'} fontSize={'16px'} lineHeight={'24px'}>
           What we believe in
         </Text>
         <VStack mt={'16px'} spacing={'5px'} alignItems={'flex-start'}>
-          <Text maxW={'550px'} color={'#6B6B6B'} fontSize={'16px'} lineHeight={'24px'}>
+          <Text maxW={'550px'} color={'theme.color-5'} fontSize={'16px'} lineHeight={'24px'}>
             - We believe in the power of entertainment. How its wonders can make you smile and widen your eyes.
           </Text>
-          <Text maxW={'550px'} color={'#6B6B6B'} fontSize={'16px'} lineHeight={'24px'}>
+          <Text maxW={'550px'} color={'theme.color-5'} fontSize={'16px'} lineHeight={'24px'}>
             - We believe games can let you do extraordinary things. They bring you this pure moment of escapism that
             just makes you happy.
           </Text>
-          <Text maxW={'550px'} color={'#6B6B6B'} fontSize={'16px'} lineHeight={'24px'}>
+          <Text maxW={'550px'} color={'theme.color-5'} fontSize={'16px'} lineHeight={'24px'}>
             - We believe that everyone should be able to enjoy games. Wherever you are, whenever you want, whatever you
             like.
           </Text>
-          <Text maxW={'550px'} color={'#6B6B6B'} fontSize={'16px'} lineHeight={'24px'}>
+          <Text maxW={'550px'} color={'theme.color-5'} fontSize={'16px'} lineHeight={'24px'}>
             - We are an entertainment company. Creating gaming experiences is what we do.
           </Text>
         </VStack>

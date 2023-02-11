@@ -20,7 +20,15 @@ const overridenChakraColors: DeepPartial<Theme['colors']> = {}
 
 /** custom colors here */
 const customColors = {
-  primary: '#F2A100',
+  primary: '#ff7e40',
+  theme: {
+    ['color-1']: '#ff7e40',
+    ['color-2']: '#ee725b',
+    ['color-3']: '#f9faf4',
+    ['color-4']: '#f7e7bd',
+    ['color-5']: '#2a464c',
+    ['color-6']: '#98a2a3',
+  },
 }
 
 const colors = {

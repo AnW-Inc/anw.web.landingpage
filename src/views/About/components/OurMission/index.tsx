@@ -51,15 +51,15 @@ const OurMission: React.FunctionComponent<IOurMissionProps> = (props) => {
       </Box>
       <Box>
         <HStack>
-          <Box width={'36px'} h={'2px'} bg={'#6B6B6B'} />
-          <Text mb={'8px'} fontWeight={'600'} color={'#6B6B6B'} fontSize={'16px'} lineHeight={'24px'}>
+          <Box width={'36px'} h={'2px'} bg={'theme.color-5'} />
+          <Text mb={'8px'} fontWeight={'600'} color={'theme.color-5'} fontSize={'16px'} lineHeight={'24px'}>
             Our Mission
           </Text>
         </HStack>
         <Heading variant={'primary'} size={'h2'} maxW={'593px'}>
           Bringing Joy to the World Through Our Passion for Gaming
         </Heading>
-        <Text mt={'16px'} color={'#6B6B6B'} maxW={'562px'} fontSize={'18px'} lineHeight={'24px'}>
+        <Text mt={'16px'} color={'theme.color-5'} maxW={'562px'} fontSize={'18px'} lineHeight={'24px'}>
           In order for everyone to experience a little moment of joy, it is our goal to astound the global community. We
           put our hearts and souls into making games, and the result is multiplatform experiences that set the bar for
           the industry and are downloaded by millions of gamers every day.

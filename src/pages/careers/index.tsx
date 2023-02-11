@@ -40,15 +40,15 @@ const Careers: React.FunctionComponent<ICareersProps> = (props) => {
         <Text fontFamily={'primary'} fontWeight={'600'} lineHeight={'60px'} fontSize={'60px'}>
           Careers
         </Text>
-        <Text fontSize={'20px'} lineHeight={'28px'} color={'#6B6B6B'} maxW={'720px'} mt={'16px'} mb={'40px'}>
-          Become a 9385 Studio Member <br/> We have plenty of opportunities available. From game design & production to
-          marketing & administration, there’s bound to be a job position for you. <br/>Your dream job at Game Studio is just
-          a few clicks away!
+        <Text fontSize={'20px'} lineHeight={'28px'} color={'theme.color-5'} maxW={'720px'} mt={'16px'} mb={'40px'}>
+          Become a 9385 Studio Member <br /> We have plenty of opportunities available. From game design & production to
+          marketing & administration, there’s bound to be a job position for you. <br />
+          Your dream job at Game Studio is just a few clicks away!
         </Text>
         <ScrollLink to={'#career-list'} spy={true} smooth={true} duration={500}>
           <HStack
             transition={'all 0.2s'}
-            color={'#6B6B6B'}
+            color={'theme.color-5'}
             _hover={{
               cursor: 'pointer',
               transform: 'scale(1.02)',
@@ -78,7 +78,7 @@ const Careers: React.FunctionComponent<ICareersProps> = (props) => {
           fontWeight={'600'}
           fontSize={'18px'}
           lineHeight={'24px'}
-          color={'#6B6B6B'}
+          color={'theme.color-5'}
           pt={'44px'}
           maxW={'1248px'}
           px={'24px'}

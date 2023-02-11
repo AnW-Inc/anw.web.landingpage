@@ -77,7 +77,7 @@ const PortfolioSlider: React.FunctionComponent<IPortfolioSliderProps> = (props) 
               alignItems={'center'}
               w={'44px'}
               h={'44px'}
-              bg={'#272727'}
+              bg={'theme.color-6'}
               p={'6px'}
               cursor={'pointer'}
               _hover={{
@@ -92,7 +92,7 @@ const PortfolioSlider: React.FunctionComponent<IPortfolioSliderProps> = (props) 
               alignItems={'center'}
               w={'44px'}
               h={'44px'}
-              bg={'#272727'}
+              bg={'theme.color-6'}
               p={'6px'}
               cursor={'pointer'}
               _hover={{
@@ -110,7 +110,7 @@ const PortfolioSlider: React.FunctionComponent<IPortfolioSliderProps> = (props) 
     },
     customPaging: (index: number) => {
       const activeStyle = {
-        bg: '#F6F9FC',
+        bg: 'theme.color-1',
         w: { base: '15px', md: '45px' },
       }
 
@@ -118,7 +118,7 @@ const PortfolioSlider: React.FunctionComponent<IPortfolioSliderProps> = (props) 
         <Box
           w={{ base: '6px', md: '32px' }}
           h={{ base: '3px', md: '8px' }}
-          bg={'#8C8C8C'}
+          bg={'theme.color-6'}
           borderTopLeftRadius={'2px'}
           borderBottomLeftRadius={'4px'}
           borderBottomRightRadius={'2px'}
@@ -140,17 +140,17 @@ const PortfolioSlider: React.FunctionComponent<IPortfolioSliderProps> = (props) 
         mx={'auto'}
         flexDir={{ base: 'column', md: 'row' }}
       >
-        <Box>
+        <Box color={'theme.color-5'}>
           <HStack>
-            <Box width={'36px'} h={'2px'} bg={'#6B6B6B'} />
-            <Text mb={'8px'} fontWeight={'600'} color={'#6B6B6B'} fontSize={'16px'} lineHeight={'24px'}>
+            <Box width={'36px'} h={'2px'} bg={'theme.color-5'} />
+            <Text mb={'8px'} fontWeight={'600'} fontSize={'16px'} lineHeight={'24px'}>
               Portfolio
             </Text>
           </HStack>
-          <Heading variant={'primary'} size={'h2'} maxW={'716px'}>
+          <Heading variant={'primary'} color={'theme.color-5'} size={'h2'} maxW={'716px'}>
             Pioneers of fun and more to come!
           </Heading>
-          <Text mt={'16px'} color={'#6B6B6B'} maxW={'562px'} fontSize={'18px'} lineHeight={'24px'}>
+          <Text color={'theme.color-6'} mt={'16px'} maxW={'562px'} fontSize={'18px'} lineHeight={'24px'}>
             Pioneer in video games creation and NFT games, we are constantly innovating in order to create new game
             experiences! There&lsquo;s inevitably a game made for you!
           </Text>
@@ -166,7 +166,7 @@ const PortfolioSlider: React.FunctionComponent<IPortfolioSliderProps> = (props) 
         {portfolioListData?.data?.map((portfolioData: BlogItemProps, key: number) => {
           return (
             <Box maxW={'411px'} w={{ base: 'full', md: 'full' }} px={'16px'} key={key}>
-              <Box bg={'#101010'}>
+              <Box bg={'theme.color-5'}>
                 <Image
                   height={386}
                   width={379}
@@ -189,7 +189,7 @@ const PortfolioSlider: React.FunctionComponent<IPortfolioSliderProps> = (props) 
                   <Text textTransform={'capitalize'} mt={'8px'} color={'#D4D4D4'} fontSize={'16px'} lineHeight={'24px'}>
                     {portfolioData?.attributes.category.data?.attributes.name}
                   </Text>
-                  <Divider borderColor={'#6B6B6B'} my={'20px'} />
+                  <Divider borderColor={'theme.color-5'} my={'20px'} />
                   <CustomNavLink to={`/portfolio/${portfolioData?.attributes.slug}`}>
                     <HStack
                       _hover={{
@@ -201,8 +201,8 @@ const PortfolioSlider: React.FunctionComponent<IPortfolioSliderProps> = (props) 
                       lineHeight={'24px'}
                       spacing={'8px'}
                     >
-                      <Text>Learn More</Text>
-                      <AiOutlineArrowRight fontWeight={'bold'} size={24} />
+                      <Text color={'theme.color-6'}>Learn More</Text>
+                      <AiOutlineArrowRight fontWeight={'bold'} size={24} color={'orange'} />
                     </HStack>
                   </CustomNavLink>
                 </Box>

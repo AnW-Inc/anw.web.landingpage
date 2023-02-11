@@ -21,7 +21,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
   return (
     <Box mt={{ base: '', md: '-78px' }} display={{ md: 'flex' }} flexDir={'column'} w="full">
       <Banner />
-      <Box bgSize={'cover'} bgPos={'center'} bgRepeat={'no-repeat'} bgImage={HomeBg1Img.src} as={'section'}>
+      {/* <Box bgSize={'cover'} bgPos={'center'} bgRepeat={'no-repeat'} bgImage={HomeBg1Img.src} as={'section'}>
         <Box pt={'80px'} maxW={'calc(1017px + 48px)'} px={'24px'} textAlign={'center'} mx={'auto'}>
           <Heading size={'h1Big'} variant={'primary'}>
             Let’s work together.
@@ -60,11 +60,11 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
             </ScrollLink>
           </Flex>
         </Box>
-      </Box>
+      </Box> */}
       <PortfolioSlider />
       <OurServices />
       <FeaturedGame />
-      <CaseStudy />
+      {/* <CaseStudy /> */}
       <Testimonials />
       <News />
       <PartnerForm setChangeEmailFunc={setChangeEmailFunc} />
@@ -82,7 +82,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
               get started
             </Text>
           </Heading>
-          <Text color={'#6B6B6B'} maxW={'584px'} mx={'auto'} mt={'16px'} mb={'40px'}>
+          <Text color={'theme.color-5'} maxW={'584px'} mx={'auto'} mt={'16px'} mb={'40px'}>
             Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation
             incididunt aliquip .
           </Text>

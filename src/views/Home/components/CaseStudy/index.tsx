@@ -140,56 +140,58 @@ const CaseStudy: React.FunctionComponent<ICaseStudyProps> = (props) => {
       >
         <Box>
           <HStack>
-            <Box width={'36px'} h={'2px'} bg={'#6B6B6B'} />
-            <Text mb={'8px'} fontWeight={'600'} color={'#6B6B6B'} fontSize={'16px'} lineHeight={'24px'}>
+            <Box width={'36px'} h={'2px'} bg={'theme.color-5'} />
+            <Text mb={'8px'} fontWeight={'600'} color={'theme.color-5'} fontSize={'16px'} lineHeight={'24px'}>
               Case Studies
             </Text>
           </HStack>
-          <Heading variant={'primary'} size={'h2'} maxW={'647px'}>
+          <Heading color={'theme.color-5'} variant={'primary'} size={'h2'} maxW={'647px'}>
             Not convinced? Take a look at some of our case studies
           </Heading>
         </Box>
-        <Text maxW={'440px'} color={'#6B6B6B'} fontSize={'18px'} lineHeight={'24px'}>
+        <Text maxW={'440px'} color={'theme.color-6'} fontSize={'18px'} lineHeight={'24px'}>
           Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation
           incididunt aliquip deserunt reprehenderit elit laborum.{' '}
         </Text>
       </Flex>
 
-      <Slider ref={sliderRef} {...settings}>
-        {caseStudyListData?.data?.map((caseStudyData: any, key: number) => {
-          return (
-            <Box position={'relative'} maxW={'584px'} w={{ base: 'full', md: 'full' }} key={key}>
-              <Box textAlign={'center'}>
-                <Image
-                  height={354}
-                  width={584}
-                  objectFit={'cover'}
-                  alt={'next img'}
-                  quality={100}
-                  src={getCMSImageUrl(caseStudyData.attributes?.coverImage?.data?.attributes?.url)}
-                />
-                <Flex
-                  flexDir={'column'}
-                  justifyContent={'flex-end'}
-                  bg={'rgba(0,0,0,.4)'}
-                  p={'24px'}
-                  bottom={'0'}
-                  h={'full'}
-                  w={'full'}
-                  pos={'absolute'}
-                >
-                  <Text fontFamily={'primary'} fontSize={'24px'} lineHeight={'26px'} fontWeight={'600'}>
-                    {caseStudyData.attributes.name}
-                  </Text>
-                  <Text color={'#EAEAEA'} fontSize={'16px'} lineHeight={'24px'}>
-                    {caseStudyData.attributes.description}
-                  </Text>
-                </Flex>
+      <Box>
+        <Slider ref={sliderRef} {...settings}>
+          {caseStudyListData?.data?.map((caseStudyData: any, key: number) => {
+            return (
+              <Box position={'relative'} maxW={'584px'} w={{ base: 'full', md: 'full' }} key={key}>
+                <Box textAlign={'center'}>
+                  <Image
+                    height={354}
+                    width={584}
+                    objectFit={'cover'}
+                    alt={'next img'}
+                    quality={100}
+                    src={getCMSImageUrl(caseStudyData.attributes?.coverImage?.data?.attributes?.url)}
+                  />
+                  <Flex
+                    flexDir={'column'}
+                    justifyContent={'flex-end'}
+                    bg={'rgba(0,0,0,.4)'}
+                    p={'24px'}
+                    bottom={'0'}
+                    h={'full'}
+                    w={'full'}
+                    pos={'absolute'}
+                  >
+                    <Text fontFamily={'primary'} fontSize={'24px'} lineHeight={'26px'} fontWeight={'600'}>
+                      {caseStudyData.attributes.name}
+                    </Text>
+                    <Text color={'#EAEAEA'} fontSize={'16px'} lineHeight={'24px'}>
+                      {caseStudyData.attributes.description}
+                    </Text>
+                  </Flex>
+                </Box>
               </Box>
-            </Box>
-          )
-        })}
-      </Slider>
+            )
+          })}
+        </Slider>
+      </Box>
     </Box>
   )
 }

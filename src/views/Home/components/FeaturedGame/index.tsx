@@ -11,15 +11,15 @@ const FeaturedGame: React.FunctionComponent<IFeaturedGameProps> = (props) => {
   return (
     <Box pt={{ base: '48px', md: '132px' }} maxW={'905px'} mx={'auto'} px={'24px'} textAlign={'center'} as="section">
       <HStack justifyContent={'center'}>
-        <Box width={'36px'} h={'2px'} bg={'#6B6B6B'} />
-        <Text mb={'8px'} fontWeight={'600'} color={'#6B6B6B'} fontSize={'16px'} lineHeight={'24px'}>
+        <Box width={'36px'} h={'2px'} bg={'theme.color-5'} />
+        <Text mb={'8px'} fontWeight={'600'} color={'theme.color-5'} fontSize={'16px'} lineHeight={'24px'}>
           Featured Game
         </Text>
       </HStack>
-      <Heading variant={'primary'} size={'h2'} maxW={'780px'}>
+      <Heading variant={'primary'} size={'h2'} maxW={'780px'} color={'theme.color-5'}>
         A new version has just arrived. Get in on the action now.
       </Heading>
-      <Text color={'#6B6B6B'} mt={{ base: '24px', md: '48px' }}>
+      <Text color={'theme.color-6'} mt={{ base: '24px', md: '48px' }}>
         Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation
         incididunt aliquip deserunt reprehenderit elit laborum.{' '}
       </Text>
