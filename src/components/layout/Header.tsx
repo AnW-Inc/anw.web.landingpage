@@ -79,17 +79,6 @@ export default function WithSubNavigation() {
         </Flex>
         <Flex w={'full'} justify={{ base: 'center', md: 'space-between' }} align={'center'}>
           <CustomNavLink to="/">
-            {/* <HStack spacing={'5px'} fontFamily={'primary'} fontWeight={'700'} lineHeight={'30px'} fontSize={'30px'}>
-              <Text color={'primary'}>9385</Text>
-              <Text
-                fontSize={'20px'}
-                transform={'translateY(-25%)'}
-                display={'inline-block'}
-                color={'rgba(191, 191, 191, 1)'}
-              >
-                Studio
-              </Text>
-            </HStack> */}
             <Center p={2} bg={'theme.color-1'} w={'150px'}>
               <Image src="/logo.png" height={'50px'} alt={'logo'} />
             </Center>
@@ -128,8 +117,8 @@ export default function WithSubNavigation() {
 }
 
 const DesktopNav = () => {
-  const linkColor = useColorModeValue('theme.color-6', 'gray.200')
-  const linkHoverColor = useColorModeValue('theme.color-5', 'white')
+  const linkColor = useColorModeValue('theme.color-5', 'gray.200')
+  const linkHoverColor = useColorModeValue('primary', 'white')
   const popoverContentBgColor = useColorModeValue('rgb(31,36,41)', 'red.400')
   const router = useRouter()
 
@@ -261,7 +250,8 @@ const MobileNav = () => {
 
       <ScrollLink to={'#contact'} spy={true} smooth={true} duration={500}>
         <Button
-          bg={'#fff'}
+          bg={'primary'}
+          color={'white'}
           w={'136px'}
           mt={2}
           h={'46px'}
@@ -297,7 +287,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
           textDecoration: 'none',
         }}
       >
-        <Text fontWeight={600} color={useColorModeValue('white', 'gray.200')}>
+        <Text fontWeight={600} color={useColorModeValue('theme.color-5', 'gray.200')}>
           {label}
         </Text>
         {children && (
@@ -324,7 +314,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
           {children &&
             children.map((child) => (
               <Link key={child.label} py={2} href={child.href}>
-                <Text color={'white'}>{child.label}</Text>
+                <Text color={'theme.color-5'}>{child.label}</Text>
               </Link>
             ))}
         </Stack>

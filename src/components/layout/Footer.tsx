@@ -11,15 +11,6 @@ const Footer = () => {
           <Box w={'full'} maxW={'388px'}>
             <CustomNavLink to="/">
               <HStack spacing={'5px'} fontFamily={'primary'} fontWeight={'700'} lineHeight={'30px'} fontSize={'25px'}>
-                {/* <Text color={'primary'}>9385</Text>
-                <Text
-                  fontSize={'15px'}
-                  transform={'translateY(-25%)'}
-                  display={'inline-block'}
-                  color={'rgba(191, 191, 191, 1)'}
-                >
-                  Studio
-                </Text> */}
                 <Center p={2} bg={'theme.color-1'} w={'150px'}>
                   <Image src="/logo.png" height={'50px'} alt={'logo'} />
                 </Center>

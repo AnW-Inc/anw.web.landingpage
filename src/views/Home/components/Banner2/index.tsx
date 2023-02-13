@@ -10,6 +10,49 @@ interface IBanner2Props {}
 const Banner2: React.FunctionComponent<IBanner2Props> = (props) => {
   return (
     <Box as={'section'}>
+      <Box bg={'primary'}>
+        <Flex
+          justifyContent={'space-between'}
+          py={'40px'}
+          px={'24px'}
+          maxW={'1248px'}
+          mx={'auto'}
+          color={'theme.color-5'}
+          fontWeight={600}
+          gap={'24px'}
+          flexDir={{ base: 'column', md: 'row' }}
+        >
+          <Text fontSize={'24px'} lineHeight={'26px'} fontFamily={'primary'}>
+            The free{' '}
+            <Text as={'span'} color={'white'}>
+              A&W NFT
+            </Text>{' '}
+            collection event is happening...
+          </Text>
+          <CustomNavLink to="https://www.claim-nft.anw.world/">
+            <HStack
+              _hover={{
+                textDecor: 'underline',
+              }}
+              fontSize={'18px'}
+              lineHeight={'24px'}
+              spacing={'8px'}
+            >
+              <Text
+                color={'white'}
+                fontFamily={'primary'}
+                fontWeight={600}
+                textDecor={'underline'}
+                fontStyle={'italic'}
+              >
+                Claim now
+              </Text>
+              <AiOutlineArrowRight fontWeight={'bold'} size={24} />
+            </HStack>
+          </CustomNavLink>
+        </Flex>
+      </Box>
+
       <Flex
         flexDir={{ base: 'column', md: 'row' }}
         mb={'64px'}
@@ -25,12 +68,16 @@ const Banner2: React.FunctionComponent<IBanner2Props> = (props) => {
             Create your success business.
           </Heading>
           <Text color={'theme.color-6'}>
-            Technology solutions, providing services related to nft, marketplace, landing page, cms,... for blockchain
+            Providing technology solutions, services related to nft, marketplace, landing page, cms, ... for blockchain
             projects.
           </Text>
           <Flex gap={'20px'} mt={5}>
-            <Button variant={'primary'}>Start free trial</Button>
-            <Button variant={'secondary'}>Connect Sales</Button>
+            {/* <Button variant={'primary'} fontFamily={'primary'} fontWeight={300}>
+              Get free NFT
+            </Button> */}
+            <Button variant={'primary'} fontFamily={'primary'} fontWeight={300}>
+              Connect Sales
+            </Button>
           </Flex>
         </Box>
         <Box>

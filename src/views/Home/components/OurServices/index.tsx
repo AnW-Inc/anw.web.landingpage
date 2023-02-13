@@ -67,10 +67,10 @@ const OurServices: React.FunctionComponent<IOurServicesProps> = (props) => {
             <Box>
               <Text
                 fontFamily={'primary'}
-                fontWeight={{ base: '600', md: '500' }}
+                fontWeight={{ base: '600', md: '700' }}
                 fontSize={{ base: '24px', md: '56px' }}
                 lineHeight={{ base: '24px', md: '56px' }}
-                color={'#272727'}
+                color={'theme.color-5'}
               >
                 250+
               </Text>
@@ -81,10 +81,10 @@ const OurServices: React.FunctionComponent<IOurServicesProps> = (props) => {
             <Box>
               <Text
                 fontFamily={'primary'}
-                fontWeight={{ base: '600', md: '500' }}
+                fontWeight={{ base: '600', md: '700' }}
                 fontSize={{ base: '24px', md: '56px' }}
                 lineHeight={{ base: '24px', md: '56px' }}
-                color={'#272727'}
+                color={'theme.color-5'}
               >
                 10
               </Text>
@@ -95,10 +95,10 @@ const OurServices: React.FunctionComponent<IOurServicesProps> = (props) => {
             <Box>
               <Text
                 fontFamily={'primary'}
-                fontWeight={{ base: '600', md: '500' }}
+                fontWeight={{ base: '600', md: '700' }}
                 fontSize={{ base: '24px', md: '56px' }}
                 lineHeight={{ base: '24px', md: '56px' }}
-                color={'#272727'}
+                color={'theme.color-5'}
               >
                 300+
               </Text>
@@ -131,7 +131,7 @@ const OurServices: React.FunctionComponent<IOurServicesProps> = (props) => {
                 <CustomNavLink to="/about">
                   <HStack fontSize={'18px'} lineHeight={'24px'} spacing={'8px'} my={'29px'}>
                     <Text
-                      color={'#272727'}
+                      color={'theme.color-5'}
                       fontWeight={'600'}
                       fontSize={'20px'}
                       lineHeight={'22px'}
@@ -140,7 +140,7 @@ const OurServices: React.FunctionComponent<IOurServicesProps> = (props) => {
                     >
                       See Our Team
                     </Text>
-                    <AiOutlineArrowRight color="#272727" fontWeight={'bold'} size={24} />
+                    <AiOutlineArrowRight color="theme.color-5" fontWeight={'bold'} size={24} />
                   </HStack>
                 </CustomNavLink>
               </Box>

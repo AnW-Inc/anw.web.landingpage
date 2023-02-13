@@ -74,7 +74,7 @@ const OurTeam: React.FunctionComponent<IOurTeamProps> = (props) => {
               alignItems={'center'}
               w={'44px'}
               h={'44px'}
-              bg={'#272727'}
+              bg={'theme.color-6'}
               p={'6px'}
               cursor={'pointer'}
               _hover={{
@@ -89,7 +89,7 @@ const OurTeam: React.FunctionComponent<IOurTeamProps> = (props) => {
               alignItems={'center'}
               w={'44px'}
               h={'44px'}
-              bg={'#272727'}
+              bg={'theme.color-6'}
               p={'6px'}
               cursor={'pointer'}
               _hover={{
@@ -107,7 +107,7 @@ const OurTeam: React.FunctionComponent<IOurTeamProps> = (props) => {
     },
     customPaging: (index: number) => {
       const activeStyle = {
-        bg: '#F6F9FC',
+        bg: 'theme.color-1',
         w: { base: '15px', md: '45px' },
       }
 
@@ -115,11 +115,12 @@ const OurTeam: React.FunctionComponent<IOurTeamProps> = (props) => {
         <Box
           w={{ base: '6px', md: '32px' }}
           h={{ base: '3px', md: '8px' }}
-          bg={'#8C8C8C'}
+          bg={'theme.color-6'}
           borderTopLeftRadius={'2px'}
           borderBottomLeftRadius={'4px'}
           borderBottomRightRadius={'2px'}
           borderTopRightRadius={'4px'}
+          transition={'all 0.3s'}
           {...(index * numberItemPerSlide === currentSlideIndex && activeStyle)}
         />
       )
@@ -166,7 +167,7 @@ const OurTeam: React.FunctionComponent<IOurTeamProps> = (props) => {
                     objectFit="cover"
                     layout="fill"
                     alt={'our team avatar'}
-                    src={getCMSImageUrl(ourTeamData.attributes?.avatar?.data?.attributes?.url)}
+                    src={getCMSImageUrl(ourTeamData.attributes?.avatar?.data?.attributes?.url) || ''}
                   />
                 </Box>
               </Box>

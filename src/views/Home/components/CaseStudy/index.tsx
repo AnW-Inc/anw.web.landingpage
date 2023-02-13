@@ -119,6 +119,7 @@ const CaseStudy: React.FunctionComponent<ICaseStudyProps> = (props) => {
           borderBottomLeftRadius={'4px'}
           borderBottomRightRadius={'2px'}
           borderTopRightRadius={'4px'}
+          transition={'all 0.3s'}
           {...(index * numberItemPerSlide === currentSlideIndex && activeStyle)}
         />
       )

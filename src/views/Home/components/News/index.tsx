@@ -39,7 +39,7 @@ const News: React.FunctionComponent<INewsProps> = (props) => {
           </Heading>
         </Box>
         <Text maxW={'440px'} color={'theme.color-6'} fontSize={'18px'} lineHeight={'24px'}>
-          Deep dive into the latest news on your favorite games, as well as stories from 9385 all over the world.
+          Deep dive into the latest news on your favorite games, as well as stories from A&W all over the world.
         </Text>
       </Flex>
       <Flex justifyContent={'flex-end'} mb={'64px'}>
